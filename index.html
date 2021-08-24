@@ -20,10 +20,9 @@
   <body>
     
     <!-- Header -->
-
     <header>
       <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./img/logo.png" alt="logo">
             <b>One step from</b><b class="text-success"> space</b>
@@ -46,7 +45,7 @@
                 <a class="nav-link" href="#">Announcement</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link active text-success" href="#">Buy tickets</a>
+                <a class="nav-link nav-link active text-success" href="#" data-bs-toggle="modal" data-bs-target="#modalCompra">Buy tickets</a>
               </li>
             </ul>
           </div>
@@ -82,7 +81,7 @@
                   having contact with our own matter is not a dream of a child, it is a reality
                   Travel, know and see more of yourself!</p>
                 <a href="" class="btn btn-outline-light">I want to be a dreamer</a>
-                <button type="button" class="btn btn-success">Get pass</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalCompra">Get pass</button>
               </div>
             </div>
           </div>
@@ -102,60 +101,66 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 col mb-4">
             <div class="card">
               <img src="./img/NASA_logo.svg.png" class="card-img-top" alt="...">
               <div class="card-body">
+                <span class="badge bg-info text-dark offset-10">Space</span>
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 col mb-4">
             <div class="card">
               <img src="./img/space_fundation.png" class="card-img-top" alt="...">
               <div class="card-body">
+                <span class="badge bg-info text-dark offset-10">Space</span>
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 col mb-4">
             <div class="card">
-              <img src="./img/space_x.png" class="card-img-top mt-2 mb-4" alt="...">
+              <img src="./img/space_x.png" class="card-img-top" alt="...">
               <div class="card-body">
+                <span class="badge bg-info text-dark offset-10">Space</span>
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 col mb-4">
             <div class="card">
-              <img src="./img/NSS.png" class="card-img-top mt-4 mb-3" alt="...">
+              <img src="./img/NSS.png" class="card-img-top" alt="...">
               <div class="card-body">
+                <span class="badge bg-info text-dark offset-10">Space</span>
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 col mb-4">
             <div class="card">
               <img src="./img/ptc.png" class="card-img-top" alt="...">
               <div class="card-body">
+                <span class="badge bg-info text-dark offset-10">Space</span>
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 col mb-4">
             <div class="card">
-              <img src="./img/ibm.png" class="card-img-top mt-5" alt="...">
+              <img src="./img/ibm.png" class="card-img-top" alt="...">
               <div class="card-body">
+                <span class="badge bg-info text-dark offset-10">Space</span>
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -196,6 +201,28 @@
         </div>
       </div>
     </footer>
+
+
+
+    <!-- modal fade -->
+    <!-- Modal -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap Bundle with Popper -->
     <script
